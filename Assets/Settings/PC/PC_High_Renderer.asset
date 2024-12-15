@@ -1,5 +1,18 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+--- !u!114 &-4602320687805149023
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 128d4705168f6bc498a9e998d8b1ad1f, type: 3}
+  m_Name: MyPathTracerFeature
+  m_EditorClassIdentifier: 
+  m_Active: 1
 --- !u!114 &-3751262535411419207
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -70,7 +83,8 @@ MonoBehaviour:
   - {fileID: 7833122117494664109}
   - {fileID: 3573653513797426673}
   - {fileID: -3751262535411419207}
-  m_RendererFeatureMap: ad6b866f10d7b46cf1dd38d0ef2a9831b937925d99d6f0cb
+  - {fileID: -4602320687805149023}
+  m_RendererFeatureMap: ad6b866f10d7b46cf1dd38d0ef2a9831b937925d99d6f0cba150f1f4b74521c0
   m_UseNativeRenderPass: 1
   xrSystemData: {fileID: 11400000, guid: 60e1133243b97e347b653163a8c01b64, type: 2}
   postProcessData: {fileID: 11400000, guid: 41439944d30ece34e96484bdb6645b55, type: 2}
@@ -92,6 +106,8 @@ MonoBehaviour:
   m_RenderingMode: 2
   m_DepthPrimingMode: 2
   m_CopyDepthMode: 0
+  m_DepthAttachmentFormat: 0
+  m_DepthTextureFormat: 0
   m_AccurateGbufferNormals: 0
   m_IntermediateTextureMode: 0
 --- !u!114 &3573653513797426673

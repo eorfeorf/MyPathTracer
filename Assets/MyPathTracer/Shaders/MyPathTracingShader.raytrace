@@ -1,0 +1,16 @@
+#pragma max_recursion_depth 1
+
+RaytracingAccelerationStructure _Scene;
+RWTexture2D<float4> _Result;
+
+[shader("raygeneration")]
+void MyRaygenShader()
+{
+    uint2 dispatchIdx = DispatchRaysIndex().xy;
+    _Result[dispatchIdx] = float4(
+        dispatchIdx.x & dispatchIdx.y,
+        (dispatchIdx.x & 15)/15.0,
+        (dispatchIdx.y & 15)/15.0,
+        0.0
+    );
+}
